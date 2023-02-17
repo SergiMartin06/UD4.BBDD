@@ -1,0 +1,5 @@
+"N. Polissa",Importe,"Fecha de inicio","Fecha de Fin","Tipo de pago",TipoPolissa_ID,Client_DNI,Vendedor_DNI
+1,12,12/3/23,12/4/23,Mensual,Automobil,Sergi,Fernando
+2,7,8/9/23,15/9/23,Semanal,Vida,Penelope,Ferran
+3,8,1/1/23,1/2/23,Mensual,Viatge,Alberto,Tristan
+4,3,30/2/23,30/2/24,Anual,Llar,Russel,Roberto

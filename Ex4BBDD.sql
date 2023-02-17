@@ -18,7 +18,7 @@ USE `mydb` ;
 -- Table `mydb`.`Client`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`Client` (
-  `DNI` INT NOT NULL AUTO_INCREMENT,
+  `DNI` VARCHAR(45) NOT NULL,
   `Nom` VARCHAR(45) NOT NULL,
   `Cognom` VARCHAR(45) NOT NULL,
   `Adreça` VARCHAR(45) NOT NULL,
@@ -36,7 +36,8 @@ CREATE TABLE IF NOT EXISTS `mydb`.`TipoPolissa` (
   `ID` INT NOT NULL,
   `Nombre` VARCHAR(45) NOT NULL,
   `Descripcion` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`ID`))
+  PRIMARY KEY (`ID`),
+  UNIQUE INDEX `ID_UNIQUE` (`ID` ASC) VISIBLE)
 ENGINE = InnoDB;
 
 
@@ -57,10 +58,10 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Polissa`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`Polissa` (
-  `N. Polissa` INT NOT NULL,
+  `N. Polissa` INT NOT NULL AUTO_INCREMENT,
   `Importe` VARCHAR(45) NOT NULL,
-  `Fecha de inicio` VARCHAR(45) NOT NULL,
-  `Fecha de Fin` VARCHAR(45) NOT NULL,
+  `Fecha de inicio` DATE NOT NULL,
+  `Fecha de Fin` DATE NOT NULL,
   `Tipo de pago` VARCHAR(45) NOT NULL,
   `TipoPolissa_ID` INT NOT NULL,
   `Client_DNI` INT NOT NULL,
@@ -69,6 +70,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Polissa` (
   INDEX `fk_Polissa_TipoPolissa_idx` (`TipoPolissa_ID` ASC) VISIBLE,
   INDEX `fk_Polissa_Client1_idx` (`Client_DNI` ASC) VISIBLE,
   INDEX `fk_Polissa_Vendedor1_idx` (`Vendedor_DNI` ASC) VISIBLE,
+  UNIQUE INDEX `N. Polissa_UNIQUE` (`N. Polissa` ASC) VISIBLE,
   CONSTRAINT `fk_Polissa_TipoPolissa`
     FOREIGN KEY (`TipoPolissa_ID`)
     REFERENCES `mydb`.`TipoPolissa` (`ID`)
