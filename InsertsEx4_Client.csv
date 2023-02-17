@@ -1,5 +1,5 @@
-DNI,Nom,Cognom,Adreça,Movil,Vip
-45687451H,Sergi,Martin,"Avenida a Menorca",651801920,Si
-45782158R,Penelope,Sanchez,"Avenida a Vizcaya",614725410,No
-41752389Y,Alberto,Quemao,"Calle fontanillas",632114844,Si
-41202587P,Russel,Pons,"Calle Mayor",632148957,No
+"N. Polissa",Importe,"Fecha de inicio","Fecha de Fin","Tipo de pago",TipoPolissa_ID,Client_DNI,Vendedor_DNI
+1,12,12/3/23,12/4/23,Mensual,Automobil,45782158R,Fernando
+2,7,8/9/23,15/9/23,Semanal,Vida,45687451H,Ferran
+3,8,1/1/23,1/2/23,Mensual,Viatge,41752389Y,Tristan
+4,3,30/2/23,30/2/24,Anual,Llar,41202587P,Roberto
