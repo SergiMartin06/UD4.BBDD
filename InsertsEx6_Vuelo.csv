@@ -1,5 +1,5 @@
-ID,Num_Vuelo,Origen,Destinacio,Dia_Arribada,Dia_Tornada,Hora_Sortida,Hora_Tornar,Avion_ID
-172634,11S,Marruecos,Nueva_York,11/9/2001,0,10:03,0,314Y
-154478,12T,España,Islandia,23/5/22,24/5/22,12:45,13:00,736H
-511263,69L,Francia,Qatar,13/2/16,24/2/16,16:30,15:30,136K
-153241,41V,Escocia,Inglaterra,19/5/20,19/5/20,12:00,19:00,543M
+Num_Vuelo,Avion_ID,Origen,Desti,Dia_Arribada,Dia_Tornada,Hora_Sortida,Hora_Tornada
+172634,1472,Marruecos,Nueva_York,11/9/22,12/9/22,Diez_en_punto_AM,Dos_en_punto_AM
+154478,3127,España,Islandia,23/5/22,24/5/22,Doce_y_media_AM,Tres_en_Punto_PM
+511263,1237,Francia,Qatar,13/2/16,24/2/16,Nueve_en_punto_PM,Cuatro_menos_cinco_PM
+153241,2538,Escocia,Inglaterra,19/5/20,19/5/20,Dos_menos_diez_PM,Siete_en_punto
